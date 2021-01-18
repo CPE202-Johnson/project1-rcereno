@@ -7,7 +7,6 @@ def convert(num, b):
         raise ValueError
     remainder = num % b
     quotient = num // b
-    # can probably use while
     if remainder == 10:
         remainder = 'A'
     elif remainder == 11:
