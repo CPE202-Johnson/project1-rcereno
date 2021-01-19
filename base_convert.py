@@ -10,7 +10,7 @@ def convert(num, b):
             num = convert_helper(remainder)
         return str(num)
     if b > 16 or b < 2:
-        raise ValueError
+        raise ValueError('base out of range')
     # quotient calculation / converting the quotient to base b
     quotient = num // b
     # reduced result
