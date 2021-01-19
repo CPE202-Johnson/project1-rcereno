@@ -15,19 +15,25 @@ class TestBaseConvert(unittest.TestCase):
     def test_base0(self):
         self.assertEqual(convert(0, 1), "0")
 
-#    def test_baseA(self):
-#        self.assertEqual(convert())
+    def test_baseA(self):
+        self.assertEqual(convert(10, 16), "A")
 
-#    def test_baseB(self):
+    def test_baseB(self):
+        self.assertEqual(convert(11, 16), "B")
 
-#    def test_baseD(self):
+    def test_baseD(self):
+        self.assertEqual(convert(13, 16), "D")
 
-#    def test_baseE(self):
+    def test_baseE(self):
+        self.assertEqual(convert(14, 16), "E")
 
- #   def test_baseF(self):
+    def test_baseF(self):
+        self.assertEqual(convert(15, 16), "F")
 
-   # def test_baseError(self):
-
+    def test_baseError(self):
+        b = 18
+        with self.assertRaises(ValueError): # used to check for value error
+            convert(7, b)
 
 # base 10 and sending in 0
 if __name__ == "__main__":
