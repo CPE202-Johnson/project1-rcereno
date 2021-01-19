@@ -15,6 +15,17 @@ class TestBaseConvert(unittest.TestCase):
     def test_base0(self):
         self.assertEqual(convert(0, 1), "0")
 
+#    def test_baseA(self):
+#        self.assertEqual(convert())
+
+#    def test_baseB(self):
+
+#    def test_baseD(self):
+
+#    def test_baseE(self):
+
+ #   def test_baseF(self):
+
    # def test_baseError(self):
 
 

@@ -21,8 +21,6 @@ class TestAssign1(unittest.TestCase):
     def test_perm_gen_lex06(self):
         self.assertEqual(perm_lex.perm_gen_lex('art'), ['art', 'atr', 'rat', 'rta', 'tar', 'tra'])
 
-#    def test_perm_gen_lex07(self):
-
 #    def test_perm_gen_lex03(self):
 #        self.assertEqual(perm_lex.perm_gen_lex('bob'), ['bob', 'bbo', 'obb', 'obb', 'bbo', 'bob'])
 
