@@ -31,9 +31,8 @@ class TestBaseConvert(unittest.TestCase):
         self.assertEqual(convert(15, 16), "F")
 
     def test_baseError(self):
-        b = 18
         with self.assertRaises(ValueError): # used to check for value error
-            convert(7, b)
+            convert(7, 18)
 
 # base 10 and sending in 0
 if __name__ == "__main__":
