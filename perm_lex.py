@@ -1,6 +1,9 @@
 # string --> list of string(s)
 # takes in a given string and returns its variety of permutations using recursion
+
 def perm_gen_lex(a):
+    """recursive function that generates all permutations of a given string and returns those permutations in a list.
+    If a is a single character, return that character in a list. If a is an empty string, return an empty list."""
     # base cases
     if len(a) == 1:
         return [a]

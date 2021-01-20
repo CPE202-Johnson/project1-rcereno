@@ -29,7 +29,5 @@ class TestAssign1(unittest.TestCase):
     def test_bear_09(self):
         self.assertTrue(bears(210)) # tests the conditions of divisible by 5 and the conditions for an even number
 
-
-
 if __name__ == "__main__":
     unittest.main()

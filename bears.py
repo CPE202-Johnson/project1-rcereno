@@ -1,5 +1,6 @@
 # integer --> boolean
 # a number is given as an input argument which will then return a boolean on whether that number will equal to 42 while possibly going through 3 conditions to reduce it
+
 def bears(n):
     """A True return value means that it is possible to win
     the bear game by starting with n bears. A False return value means
