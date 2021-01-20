@@ -5,14 +5,16 @@ def convert(num, b):
     # remainder calculation / converting num to base b
     remainder = num % b
     # base cases
+    if b > 16 or b < 2:
+        raise ValueError('base out of range')
     if num < b:
         if num >= 10 and num <= 15:
             num = convert_helper(remainder)
         return str(num)
-    if b > 16 or b < 2:
-        raise ValueError('base out of range')
     # quotient calculation / converting the quotient to base b
     quotient = num // b
+    if remainder >= 10 and remainder <= 15:
+        remainder = convert_helper(remainder)
     # reduced result
     reduced_result = convert(quotient, b)
     # combined result
