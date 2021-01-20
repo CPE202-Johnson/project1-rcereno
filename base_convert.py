@@ -22,7 +22,7 @@ def convert(num, b):
     return combined_result
 
 # integer --> string
-# if/elif/else statements for when the remainder is a hex value of A-F from 10-15 or if the remainder does not fit those conditions (else statement)
+# if/elif/else statements for when the remainder is a hex value of A-F from 10-15
 def convert_helper(remainder):
     if remainder == 10:
         return 'A'
@@ -36,6 +36,4 @@ def convert_helper(remainder):
         return 'E'
     elif remainder == 15:
         return 'F'
-    else:
-        return str(remainder)
 
